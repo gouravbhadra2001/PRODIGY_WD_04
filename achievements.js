@@ -1,4 +1,3 @@
-// script.js
 const certificateCards = document.querySelectorAll('.zoomin');
 const imageModal = document.getElementById('imageModal');
 const modalImage = document.getElementById('modalImage');
