@@ -14,22 +14,15 @@ certificateCards.forEach((certificateCard, index) => {
 });
 
 function openImageInModal(index) {
-    // Assuming imageLinks is an array of image URLs
     const imageUrl = imageLinks[index];
-
-    // Set the image source in the modal
     modalImage.src = imageUrl;
-
-    // Display the modal
     imageModal.style.display = 'block';
 }
 
 closeModal.addEventListener('click', () => {
-    // Close the modal when the close button is clicked
     imageModal.style.display = 'none';
 });
 
-// Close the modal if the user clicks outside the modal
 window.addEventListener('click', (event) => {
     if (event.target === imageModal) {
         imageModal.style.display = 'none';
