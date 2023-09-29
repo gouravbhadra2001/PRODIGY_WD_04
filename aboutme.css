@@ -1,0 +1,328 @@
+#aboutMe {
+
+  height: auto;
+  margin-top: 100px;
+  width: 90%;
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 100px;
+  margin-inline: auto;
+  transition: height ease-in-out 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+
+}
+
+#aboutMe #ProfilePic {
+  height: 300px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+}
+
+#aboutMe #description {
+  padding: 40px;
+
+}
+
+#whoami,
+#passion,
+#bio,
+#education,
+#residence,
+#contacts,
+#educationAndResidence,
+#skillContainer,
+#interestContainer,
+#experiences {
+  width: 70%;
+  padding: 10px;
+  text-align: justify;
+  margin-inline: auto;
+}
+
+#aboutMe #description #whoami {
+  font-size: 50px;
+}
+
+#aboutMe #description #passion {
+  font-size: x-large;
+}
+
+#aboutMe #description #bio {
+  font-size: 17px;
+}
+
+
+#educationAndResidence {
+
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+
+}
+
+#aboutMe #description #education,
+#aboutMe #description #residence,
+#experiences {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+
+}
+
+#aboutMe #description #education {
+  flex-direction: column;
+}
+
+#aboutMe #description #education div {
+  display: flex;
+  margin: 5px 5px;
+}
+
+#aboutMe #description #education img,
+#aboutMe #description #residence img,
+#experiences img {
+  box-shadow: none;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+
+#contacts,
+#skills {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+
+
+}
+
+#contacts img,
+#skills img,
+#interests img {
+  height: 25px;
+  width: 25px;
+  box-shadow: none;
+  margin-inline: 10px;
+}
+
+.skillset,
+.interestset {
+  text-align: justify;
+  padding: 5px;
+  border: 0.2px solid black;
+  width: fit-content;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  transition: border 0.5s ease-in-out, width 0.5s ease-in-out;
+  border-radius: 0px
+}
+
+.interestset {
+  flex-direction: column;
+  height: min-content;
+  transition: border 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+#skills,
+#interests {
+  font-size: 16px;
+  width: 0;
+  padding-inline: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.5s ease-in-out, padding-inline 0.5s ease-in-out;
+}
+
+#interests {
+  height: 0;
+  transition: height 0.5s ease-in-out;
+}
+
+.skillset:hover,
+.interestset:hover,
+.skillset.open,
+.interestset.open {
+  border: 2px solid black;
+  transition: border 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+.skillset:hover .skills,
+.interestset:hover .interests,
+.skillset.open .skills,
+.interestset.open .interests {
+  display: none;
+}
+
+.skillset:hover #skills,
+.interestset:hover #interests,
+.skillset.open #skills,
+.interestset.open #interests {
+  width: max-content;
+  padding-inline: 5px;
+  transition: width 0.5s ease-in-out, padding-inline 0.5s ease-in-out;
+
+}
+
+.interestset:hover #interests,
+.interestset.open #interests {
+  height: max-content;
+  max-height: auto;
+  transition: max-height 0.5s ease-in-out, padding-inline 0.5s ease-in-out;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 960px) {
+  #aboutMe #description {
+    margin-top: 20px;
+  }
+
+  #aboutMe {
+    flex-direction: column;
+    padding-left: 10px;
+    padding: 10px;
+  }
+
+  #aboutMe #ProfilePic {
+    height: 250px;
+  }
+
+  #aboutMe #description {
+    padding: 0;
+  }
+
+  #whoami,
+  #passion,
+  #bio,
+  #education,
+  #residence,
+  #contacts,
+  #educationAndResidence,
+  #skillContainer,
+  #interestContainer,
+  #experiencees {
+    width: 100%;
+    padding: 5px;
+
+  }
+
+  #aboutMe #description #whoami {
+    font-size: 25px;
+  }
+
+  #aboutMe #description #passion {
+    font-size: large;
+  }
+
+  #aboutMe #description #bio {
+    font-size: 15px;
+  }
+
+
+  #educationAndResidence {
+
+    width: 100%;
+
+  }
+
+  #educationAndResidence p,
+  #experiences p {
+    font-size: 15px;
+  }
+
+  #aboutMe #description #education img,
+  #aboutMe #description #residence img,
+  #experiences img {
+    height: 30px;
+    width: 30px;
+  }
+
+
+  #contacts img,
+  #skills img,
+  #interests img {
+    height: 20px;
+    width: 20px;
+    box-shadow: none;
+    margin-inline: 5px;
+  }
+
+  #skills,
+  #interests {
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  #aboutMe #ProfilePic {
+    height: 150px;
+  }
+
+  #educationAndResidence {
+    flex-direction: column;
+  }
+
+  #educationAndResidence p,
+  #experiences p {
+    font-size: 12px;
+  }
+
+  #aboutMe #description #education img,
+  #aboutMe #description #residence img,
+  #experiences img {
+    height: 30px;
+    width: 30px;
+  }
+
+  #aboutMe #description #whoami {
+    font-size: 21px;
+  }
+
+  #aboutMe #description #passion {
+    font-size: small;
+  }
+
+  #aboutMe #description #bio {
+    font-size: 12px;
+  }
+
+  #contacts img,
+  #skills img,
+  #interests img {
+    height: 20px;
+    width: 20px;
+    box-shadow: none;
+    margin-inline: 5px;
+  }
+
+  .skills,
+  .interests {
+    font-size: 12px;
+  }
+
+  #skills,
+  #interests {
+    font-size: 12px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 300px) {}

@@ -1,0 +1,21 @@
+
+
+
+
+#achievements .project_head{
+    flex-direction: row-reverse;
+}
+
+
+#achievements .button_container img{
+    height: 96px;
+    width: 96px;
+}
+
+
+@media only screen and (max-width:400px) {
+    #achievements .button_container img{
+        height: 40px;
+        width: 40px;
+    }
+}

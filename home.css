@@ -1,0 +1,107 @@
+#homepage,
+#myPhilosophy {
+    width: 90%;
+    padding-inline: 150px;
+    padding-block: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    margin: 100px auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+
+}
+
+#homepage img,
+#myPhilosophy img {
+    height: 500px;
+}
+
+#Intro,
+#philosopywords {
+    padding: 10px;
+    width: 50%;
+    margin-inline: auto;
+
+    margin: auto auto;
+
+}
+
+#introhead,
+#philosophyhead {
+    font-size: 50px;
+    padding-block: 40px;
+}
+
+#introdesc,
+#philosophydesc {
+    font-size: 16px;
+    text-align: justify;
+}
+
+#call_to_project {
+    border: 1px solid black;
+    padding: 10px;
+    width: fit-content;
+    cursor: pointer;
+    margin-block: 40px;
+}
+
+#call_to_project:hover {
+
+    color: rgb(249, 247, 244);
+    background-color: black;
+}
+
+
+@media only screen and (max-width:960px) {
+
+    #homepage,
+    #myPhilosophy {
+
+        flex-direction: column;
+        padding-inline: 20px;
+        padding-block: 30px;
+    }
+
+    #homepage img,
+    #myPhilosophy img {
+        height: 70vw;
+        aspect-ratio: 3.25/3;
+    }
+
+    #Intro,
+    #philosophywords {
+        padding: 5px;
+        width: 100%;
+
+    }
+
+    #introhead,
+    #philosophyhead {
+        font-size: 30px;
+        padding-block: 40px;
+    }
+
+    #introdesc,
+    #philosophydesc {
+        font-size: 12px;
+        width: inherit;
+    }
+
+    #call_to_project {
+
+        margin-block: 40px;
+    }
+
+
+}
+
+@media only screen and (max-width:400px) {
+
+    #introhead,
+    #philosophyhead {
+        font-size: 25px;
+    }
+}

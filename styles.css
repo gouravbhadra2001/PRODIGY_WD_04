@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p,
+a {
+    font-family: 'Young Serif', serif;
+}
+
+body {
+    padding-bottom: 10px;
+    background-color: rgba(245, 222, 179, 0.358);
+}
+
+a {
+    text-decoration: under;
+    color: black;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 3000;
+
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto auto;
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+    z-index: 3000;
+
+
+}
+
+section:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+header {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+#profile_logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.768);
+    border-radius: 5px;
+
+}
+
+
+#profile_logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid wheat;
+}
+
+#profile_logo #profile_name {
+    padding: 10px;
+    color: wheat;
+}
+
+.hamburger {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+    height: 38px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.hamburger:hover {
+    background: linear-gradient(to right, rgb(149, 237, 240), rgb(167, 235, 204));
+}
+
+.fa-fa-bar {
+    background-color: rgba(0, 0, 0, 0.576);
+    height: 2px;
+    width: 20px;
+}
+
+
+.menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    width: 250px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    color: white;
+    background-color: rgba(10, 12, 12, 0.82);
+    position: fixed;
+    z-index: 2000;
+    border-radius: 5px;
+    box-shadow: rgba(25, 25, 28, 0.83) 0px 50px 100px -20px, rgba(11, 10, 10, 0.456) 0px 30px 60px -30px, rgba(15, 15, 22, 0.507) 0px -2px 6px 0px inset;
+}
+
+.menu-item {
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-item:hover {
+
+    background-color: rgba(16, 218, 232, 0.591);
+
+}
+
+footer {
+    margin-bottom: 0px;
+    margin-top: 100px;
+
+}
+
+footer div {
+    text-align: center;
+    color: #0000008e;
+}
+
+
+#thank {
+    text-align: center;
+    padding-block: 100px;
+    font-size: 72px;
+
+}
+
+@media only screen and (max-width:960px) {}
+
+@media only screen and (max-width:400px) {
+
+    .hamburger {
+        top: 0;
+        right: 0;
+        justify-content: space-around;
+        padding: 5px;
+        height: 25px;
+    }
+
+    .hamburger:hover {
+        background: linear-gradient(to right, rgb(149, 237, 240), rgb(167, 235, 204));
+    }
+
+    .fa-fa-bar {
+        background-color: rgba(0, 0, 0, 0.576);
+        height: 0.5px;
+        width: 16px;
+    }
+
+    #profile_logo {
+        width: 100px;
+        cursor: pointer;
+
+    }
+
+    #profile_logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #profile_logo #profile_name {
+        padding: 5px;
+        font-size: x-small;
+    }
+
+    #thank {
+        font-size: 36px;
+    }
+}
