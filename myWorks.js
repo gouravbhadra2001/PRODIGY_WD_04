@@ -1,8 +1,8 @@
 const site_links = [
-    "https://gouravbhadra2001.github.io/PRODIGY_WD_01/",
-    "https://gouravbhadra2001.github.io/PRODIGY_WD_02/",
-    "https://gouravbhadra2001.github.io/PRODIGY_WD_03/",
-    "https://gouravbhadra2001.github.io/PRODIGY_WD_05/"
+    "https://prodigy-wd-01-pi.vercel.app/",
+    "https://prodigy-wd-03-whgx.vercel.app/",
+    "https://prodigy-wd-03.vercel.app/",
+    "https://prodigy-wd-04-lqu1.vercel.app/"
 ]
 
 const repo_links = ['https://github.com/gouravbhadra2001/PRODIGY_WD_01.git',
